@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+<link href="musicsurvey.css" rel="stylesheet">
+</head>
+<body>
+<h1>Music Survey</h1>
+ <form method="post" action="http://www.markmurtha.com/csis128/readform.asp">
+  <label for="myName">Name:</label><br>
+  <input type="text" name="myName" id="myName"
+  required="required" placeholder="your first and last name"><br><br>
+  <label for="myEmail">E-mail:</label><br>
+  <input type="email" name="myEmail" id="myEmail"
+  required="required" placeholder="you@yourdomain.com"><br><br>
+ <fieldset>
+  <Legend>Select Your Favorite Types of Music:</legend>
+  <input type="checkbox" name="pop" id="pop" value="yes">Pop<br>
+  <input type="checkbox" name="classical" value="yes">Classical<br>
+  <input type="checkbox" name="Rock" value="yes">Rock<br>
+  <input type="checkbox" name="Folk" value="yes">Folk<br>
+  <input type="checkbox" name="Rap" value="yes">Rap<br>
+  <input type="checkbox" name="other" value="yes">Other<br>
+ </fieldset><br>
+ <fieldset>
+  <legend>Select how often you purchase Music CDs:</legend>
+   <input type="radio" name="howoften" id="howWeekly" value="Weekly">Weekly<br>
+   <input type="radio" name="howoften" id="howAfewCDseachyear" value="A few CDs each year">A few CDs each year<br>
+   <input type="radio" name="howoften" id="howMonthly" value="Monthly">Monthly<br>
+   <input type="radio" name="howoften" id="howNeverpurchase" value="Never purchase">Never purchase<br>
+ </fieldset><br>
+  Select the locations you listen to music<br>
+   <select size="3" name="jumpmenu" id="jumpmenu">
+    <option value="index.html">At Home</option>
+	<option value="car.html">In the Car</option>
+	<option value="anywhere.html">Anywhere(MP3 Player)</option>
+	<option value="other.html">Other</option>
+  </select><br><br>
+ What role does music play in your life?<br>
+  <textarea name="myComments" id="myComments" rows="3" cols="60" required="required"></textarea><br>
+  <input id="mySubmit" type="submit" value="Submit"> <input type="reset">
+ </form>
+</body>
+</html>
